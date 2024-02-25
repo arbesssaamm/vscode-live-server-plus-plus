@@ -1,31 +1,36 @@
-{
-	"version": "0.2.0",
-	"configurations": [{
-			"name": "Run Extension",
-			"type": "extensionHost",
-			"request": "launch",
-			"runtimeExecutable": "${execPath}",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}"
-			],
-			"outFiles": [
-				"${workspaceFolder}/out/**/*.js"
-			],
-			"preLaunchTask": "npm: watch"
-		},
-		{
-			"name": "Extension Tests",
-			"type": "extensionHost",
-			"request": "launch",
-			"runtimeExecutable": "${execPath}",
-			"args": [
-				"--extensionDevelopmentPath=${workspaceFolder}",
-				"--extensionTestsPath=${workspaceFolder}/out/test"
-			],
-			"outFiles": [
-				"${workspaceFolder}/out/test/**/*.js"
-			],
-			"preLaunchTask": "npm: watch"
-		}
-	]
-}
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+       *{
+           margin: 0;
+           padding: 0;
+           box-sizing: border-box;
+       }
+       body{
+          display: flex;
+         align-items: center;
+          justify-content: center;
+          height: 100vh;
+       }
+       h2{
+            width: 200px;
+            text-align: center;
+            margin: 100vh;
+       }       
+        select{
+            width: 200px;       
+            height: 32px;
+            margin: 0px 5px;        
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+        <h2>DROPDOWN</h2>
+        <select name="">
+        <option value="1">one</option>
+        <option value="2">two</option>
+        <option value="3">three</option>
+        <option value="4">four</option>
